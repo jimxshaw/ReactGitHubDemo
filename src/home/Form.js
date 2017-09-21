@@ -11,9 +11,10 @@ class Form extends React.Component {
     event.preventDefault();
     console.log('Event: form submit', this.state.userName);
     axios.get(`https://api.github.com/users/${this.state.userName}`)
-          .then(response => {
-            this.props.onSubmit(response.data);
-          });
+      .then(response => {
+        this.props.onSubmit(response.data);
+        this.setState({userName: ''});
+      });
   };
 
   render() {

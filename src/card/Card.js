@@ -8,7 +8,7 @@ const Card = (props) => {
         <div style={{fontSize: '1.25em', fontWeight: 'bold'}}>
           {props.name}
         </div>
-        <div>{props.bio}</div>
+        <div>{props.company}</div>
       </div>
     </div>
   );
