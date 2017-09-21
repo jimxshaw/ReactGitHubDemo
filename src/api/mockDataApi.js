@@ -1,4 +1,4 @@
-const data = [
+const cards = [
   {
     name: 'Jim Shaw',
     avatar_url: 'https://avatars0.githubusercontent.com/u/5104397?v=4',
@@ -11,4 +11,4 @@ const data = [
   }
 ];
 
-export default data;
+export default cards;

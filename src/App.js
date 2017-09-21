@@ -2,9 +2,14 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CardList from './card/CardList';
-import data from './api/mockDataApi';
+import cards from './api/mockDataApi';
+import Form from './home/Form';
 
 class App extends Component {
+  state = {
+    cards: cards
+  };
+
   render() {
     return (
       <div className="App">
@@ -14,7 +19,8 @@ class App extends Component {
         </div>
         <br/>
         <div>
-          <CardList cards={data}/>
+          <Form/>
+          <CardList cards={this.state.cards}/>
         </div>
       </div>
     );
