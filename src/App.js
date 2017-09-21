@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import CardList from './card/CardList';
+import data from './api/mockDataApi';
 
 class App extends Component {
   render() {
@@ -13,7 +14,7 @@ class App extends Component {
         </div>
         <br/>
         <div>
-          <CardList/>
+          <CardList cards={data}/>
         </div>
       </div>
     );
